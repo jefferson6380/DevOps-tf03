@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      pmd: ./run.sh pmd -d ./src -R rulesets/java/quickstart.xml -f text
+      pmd: ./run.sh pmd ${{ github.workspace }}/src
 
     steps:
       - name: Meu nome e RA
