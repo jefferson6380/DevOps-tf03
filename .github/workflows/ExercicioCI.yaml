@@ -10,12 +10,15 @@ jobs:
   PrimeiroJob-build:
     runs-on: ubuntu-latest
 
+    .env:
+      pmd: ./run.sh pmd -d ./src -R rulesets/java/quickstart.xml -f text
+
     steps:
       - name: Meu nome e RA
         run: echo "Jefferson Nacimento - 6324617"
       - name: Mostra o diretório de trabalho
         run: ${{ env.pmd }}
       - name: Mostra o nome do repositório
-        run: acho "${{ github.repository }}"
+        run: echo "${{ github.repository }}"
 
 
