@@ -17,6 +17,6 @@ jobs:
       - name: Meu nome e RA
         run: echo "Jefferson Nacimento - 6324617"
       - name: Mostra o diretório de trabalho
-        run: pmd
+        run: pwd
       - name: Mostra o nome do repositório
         run: echo "${{ github.repository }}"
