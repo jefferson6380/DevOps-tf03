@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      pmd: ./run.sh pmd ${{ github.workspace }}/src
+      pmd: ${{ github.workspace }}
 
     steps:
       - name: Meu nome e RA
