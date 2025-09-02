@@ -10,9 +10,6 @@ jobs:
   PrimeiroJob-build:
     runs-on: ubuntu-latest
 
-    env:
-      pmd: ${{ github.workspace }}
-
     steps:
       - name: Meu nome e RA
         run: echo "Jefferson Nacimento - 6324617"
