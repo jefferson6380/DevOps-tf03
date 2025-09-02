@@ -1,0 +1,21 @@
+name: "TF de CI - Fundamentos"
+
+on:
+  push:
+    branch: [ "main" ]
+    
+  workflow_dispatch:
+
+jobs:
+  PrimeiroJob-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Meu nome e RA
+        run: echo "Jefferson Nacimento - 6324617"
+      - name: Mostra o diretório de trabalho
+        run: ${{ env.pmd }}
+      - name: Mostra o nome do repositório
+        run: acho "${{ github.repository }}"
+
+
