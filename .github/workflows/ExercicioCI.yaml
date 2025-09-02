@@ -2,11 +2,9 @@ name: "TF de CI - Fundamentos"
 
 on:
   push:
-    branch: [ "main" ]
-
-  paths-ignore:
-    - Ecercicio_01.md
-
+    branches: [ "main" ]
+    paths-ignore:
+      - Ecercicio_01.md
   workflow_dispatch:
 
 jobs:
