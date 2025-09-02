@@ -20,5 +20,3 @@ jobs:
         run: pmd
       - name: Mostra o nome do repositório
         run: echo "${{ github.repository }}"
-
-
