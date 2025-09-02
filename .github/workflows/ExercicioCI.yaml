@@ -10,7 +10,7 @@ jobs:
   PrimeiroJob-build:
     runs-on: ubuntu-latest
 
-    .env:
+    env:
       pmd: ./run.sh pmd -d ./src -R rulesets/java/quickstart.xml -f text
 
     steps:
